@@ -1,4 +1,6 @@
 lanche = ("pizza", "hotdog", "refri", "batata")
+idades = tuple() # outra forma de criar tuplas
+
 print(lanche)
 print(type(lanche)) # estou mostrando o tipo da variável
 
