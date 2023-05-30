@@ -16,7 +16,7 @@ consulta.execute(comando)
 # Exibir a consulta do banco
 resultado = consulta.fetchall()# fetchall() irá trazer todas as linhas de registro que existem no banco
 
-#print(resultado,"\n")
+print(resultado,"\n")
 
 for itens in resultado:
     print(f"Nome: {itens[1]}, Cargo: {itens[3]}")
