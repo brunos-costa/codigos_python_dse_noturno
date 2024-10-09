@@ -12,10 +12,10 @@ class Produto:
 class Livro(Produto):
     def __init__(self, nome, preco, autor):
         super().__init__(nome, preco)
-        self.__autor = autor
+        self._autor = autor
 
     def descrever(self):
-        print(f"Livro: {self._nome} - Autor: {self.__autor}\n")
+        print(f"Livro: {self._nome} - Autor: {self._autor}\n")
     
     def calcularPreco(self):
         print(f"O livro custa R${self._preco}")
@@ -23,7 +23,7 @@ class Livro(Produto):
 class Eletronico(Produto):
     def __init__(self, nome, preco, marca):
         super().__init__(nome, preco)
-        self.__marca = marca
+        self._marca = marca
 
     def calcularPreco(self):
-        print(f"O eletrônico custará o valor de R$ {self._preco * 1.2}")
+        print(f"O eletrônico, da marca {self._marca} custará o valor de R$ {self._preco * 1.2}")
